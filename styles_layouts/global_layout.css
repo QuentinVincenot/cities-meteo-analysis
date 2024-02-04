@@ -35,10 +35,17 @@ body {
 }
 
 .left_panel {
-    width: 200px;
-    height: 600px;
+    width: 180px;
+    height: 580px;
+    padding: 10px;
     float: left;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
     background-color: rgba(221, 15, 15, 0.6);
+}
+
+#city_field {
+    margin-bottom: 10px;
 }
 
 .central_panel {
