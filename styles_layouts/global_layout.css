@@ -60,6 +60,21 @@ body {
     margin-bottom: 10px;
 }
 
+#city_field div {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+#measurement_field div {
+    margin-left: 5px;
+}
+
+#getdata_button {
+    display: block;
+    margin: 10px auto;
+}
+
 /*--------------------------------------------------------------------------------
 ----- Top indicators panel container and elements configuration
 --------------------------------------------------------------------------------*/

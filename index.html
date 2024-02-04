@@ -30,55 +30,61 @@
 
             <fieldset id="city_field">
                 <legend>City of interest:</legend>
-                <label>Ville:</label>
-                <select name="thelist">
-                    <option>Toulouse</option>
-                    <option>New York</option>
-                    <option>Tokyo</option>
-                </select>
+                <div>
+                    <select name="city_list">
+                        <option>Toulouse</option>
+                        <option>New York</option>
+                        <option>Tokyo</option>
+                    </select>
+                </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="measurement_field">
                 <legend>Measurement type:</legend>
                 <div>
-                    <input type="radio" id="Temperature (C°)" name="measurement_type" value="Temperature (C°)" checked/>
-                    <label for="temperature">Temperature (C°)</label>
+                    <div>
+                        <input type="radio" id="Temperature (C°)" name="measurement_type" value="Temperature (C°)" checked/>
+                        <label for="temperature">Temperature (C°)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Humidity (%)" name="measurement_type" value="Humidity (%)"/>
+                        <label for="humidity">Humidity (%)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Precipitation (mm)" name="measurement_type" value="Precipitation (mm)"/>
+                        <label for="precipitation">Precipitation (mm)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Pressure (hPa)" name="measurement_type" value="Pressure (hPa)"/>
+                        <label for="pressure">Pressure (hPa)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Wind speed (km/h)" name="measurement_type" value="Wind speed (km/h)"/>
+                        <label for="wind">Wind speed (km/h)</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="Humidity (%)" name="measurement_type" value="Humidity (%)"/>
-                    <label for="humidity">Humidity (%)</label>
-                </div>
-                <div>
-                    <input type="radio" id="Precipitation (mm)" name="measurement_type" value="Precipitation (mm)"/>
-                    <label for="precipitation">Precipitation (mm)</label>
-                </div>
-                <div>
-                    <input type="radio" id="Pressure (hPa)" name="measurement_type" value="Pressure (hPa)"/>
-                    <label for="pressure">Pressure (hPa)</label>
-                </div>
-                <div>
-                    <input type="radio" id="Wind speed (km/h)" name="measurement_type" value="Wind speed (km/h)"/>
-                    <label for="wind">Wind speed (km/h)</label>
-                </div>
+                
             </fieldset>
+
+            <button id="getdata_button">Get data !</button>
         </div>
 
         <div class="top_zone">
             <div class="kpi_card" id="kpi_min">
-                a
+                Min measurement
                 <i class="fa-solid fa-temperature-half" style="font-size:50px;"></i>
                 <i class="fa-solid fa-droplet" style="font-size:50px;"></i>
             </div>
             <div class="kpi_card" id="kpi_max">
-                b
+                Max measurement
                 <i class="fa-solid fa-cloud-showers-heavy" style="font-size:50px;"></i>
             </div>
             <div class="kpi_card" id="kpi_avg">
-                c
+                Average measurement on last 90 days
                 <i class="fa-solid fa-gauge-high" style="font-size:50px;"></i>
             </div>
             <div class="kpi_card" id="kpi_evol">
-                d
+                Evolution since yesterday
                 <i class="fa-solid fa-wind" style="font-size:50px;"></i>
             </div>
         </div>
