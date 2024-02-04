@@ -78,7 +78,25 @@ body {
     margin-top: 15px;
     margin-left: 20px;
     border: solid black 1px;
+    border-radius: 7px;
 }
+
+#kpi_min {
+    background: linear-gradient(to right bottom,#1E90FF,#87CEEB);
+}
+
+#kpi_max {
+    background: linear-gradient(to right bottom,#B22222,#F08080);
+}
+
+#kpi_avg {
+    background: linear-gradient(to right bottom,#FFFF00,#EEE8AA);
+}
+
+#kpi_evol {
+    background: linear-gradient(to right bottom,#FF4500,#FFFFE0);
+}
+
 
 /*--------------------------------------------------------------------------------
 ----- Middle graph panel container and elements configuration
