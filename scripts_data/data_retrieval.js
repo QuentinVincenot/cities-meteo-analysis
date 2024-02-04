@@ -2,8 +2,9 @@
 ----- RETRIEVED DATA INFORMATION ABOUT CITIES METEO
 --------------------------------------------------------------------------------*/
 
-
-const ctx = document.getElementById('myChart');
+document.getElementById('myChart').style.width = '580px';
+document.getElementById('myChart').style.height = '280px';
+const ctx = document.getElementById('myChart').getContext('2d');
 
 new Chart(ctx, {
   type: 'bar',
@@ -16,15 +17,13 @@ new Chart(ctx, {
     }]
   },
   options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
+    responsive: true
   }
 });
 
-const ctx2 = document.getElementById('lineChart');
+document.getElementById('lineChart').style.width = '580px';
+document.getElementById('lineChart').style.height = '280px';
+const ctx2 = document.getElementById('lineChart').getContext('2d');
 
 new Chart(ctx2, {
   type: 'line',
@@ -38,9 +37,7 @@ new Chart(ctx2, {
   },
   options: {
     scales: {
-      y: {
-        beginAtZero: true
-      }
+      responsive: true
     }
   }
 });

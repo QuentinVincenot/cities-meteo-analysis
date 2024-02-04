@@ -10,6 +10,9 @@
 
     <!-- Import the Chart.js library to draw graphs and visualizations -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Application global and general layout styling -->
+    <link rel="stylesheet" href="styles_layouts/global_layout.css">
 </head>
 
 <body>
@@ -19,17 +22,50 @@
     <!-- Global container to integrate the application visual interactions -->
     <div class="global_container">
 
-        <div>
-            <canvas id="myChart"></canvas>
+        <div class="left_panel">
+            <fieldset>
+                <legend>City of interest:</legend>
+                <label>Ville:</label>
+                <select name="thelist">
+                    <option>Toulouse</option>
+                    <option>New York</option>
+                    <option>Tokyo</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Measurement type:</legend>
+                <div>
+                    <input type="radio" id="Temperature (C°)" name="measurement_type" value="Temperature (C°)" checked/>
+                    <label for="temperature">Temperature (C°)</label>
+                </div>
+                <div>
+                    <input type="radio" id="Humidity (%)" name="measurement_type" value="Humidity (%)"/>
+                    <label for="humidity">Humidity (%)</label>
+                </div>
+            </fieldset>
         </div>
 
-        <div>
-            <canvas id="lineChart"></canvas>
+        <div class="central_panel">
+            <div id="barchart_container">
+                <canvas id="myChart"></canvas>
+            </div>
+    
+            <div id="linechart_container">
+                <canvas id="lineChart"></canvas>
+            </div>
         </div>
+
+        <div class="right_panel">
+            b
+        </div>
+
+        
 
     </div>
 
-    
+    <!--  -->
+    <div class="application_footer">Special place for footer</div>
     
     <!-- Import the specific script to retrieve meteo data through MeteoFrance API (open-meteo.com) -->
     <script type="text/javascript" src="scripts_data/data_retrieval.js"></script>

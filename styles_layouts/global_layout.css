@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------------------------
+----- Global page configuration
+--------------------------------------------------------------------------------*/
+
+/* Import the font resource to use Roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap');
+
+/* Configure the HTML body to be restricted to a centered fixe-sized zone of the page */
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+/*--------------------------------------------------------------------------------
+----- Application title/footer containers configuration
+--------------------------------------------------------------------------------*/
+
+/* Configure the application title with a dedicated colored/sized/bordered zone */
+.application_title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/*  */
+.global_container {
+    height: 600px;
+}
+
+.left_panel {
+    width: 200px;
+    height: 600px;
+    float: left;
+    background-color: rgba(221, 15, 15, 0.6);
+}
+
+.central_panel {
+    width: 600px;
+    height: 600px;
+    float: left;
+    background-color: rgba(0, 255, 13, 0.774);
+}
+
+.right_panel {
+    width: 400px;
+    height: 600px;
+    float: left;
+    background-color: rgba(12, 74, 245, 0.9);
+}
+
+#barchart_container, #linechart_container {
+    width: 600px; min-width: 600px; max-width: 600px;
+    height: 300px; min-height: 300px; max-height: 300px;
+}
+
+/* Configure the application footer layout with a dedicated colored/sized/bordered zone */
+.application_footer {
+    clear: both;
+    height: 25px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
