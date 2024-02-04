@@ -7,12 +7,12 @@
 
 /* Configure the HTML body to be restricted to a centered fixe-sized zone of the page */
 body {
-    width: 1200px;
+    width: 1400px;
     margin: auto;
 }
 
 /*--------------------------------------------------------------------------------
------ Application title/footer containers configuration
+----- Application title container configuration
 --------------------------------------------------------------------------------*/
 
 /* Configure the application title with a dedicated colored/sized/bordered zone */
@@ -31,12 +31,16 @@ body {
 
 /*  */
 .global_container {
-    height: 600px;
+    height: 700px;
 }
+
+/*--------------------------------------------------------------------------------
+----- Filtering panel container and elements configuration
+--------------------------------------------------------------------------------*/
 
 .left_panel {
     width: 180px;
-    height: 580px;
+    height: 680px;
     padding: 10px;
     float: left;
     font-size: 12px;
@@ -48,24 +52,63 @@ body {
     margin-bottom: 10px;
 }
 
-.central_panel {
-    width: 600px;
-    height: 600px;
+/*--------------------------------------------------------------------------------
+----- Top indicators panel container and elements configuration
+--------------------------------------------------------------------------------*/
+
+.top_zone {
+    width: 1200px;
+    height: 150px;
+    float: left;
+    background-color: rgb(255, 60, 15, 0.6);
+}
+
+/*--------------------------------------------------------------------------------
+----- Middle graph panel container and elements configuration
+--------------------------------------------------------------------------------*/
+
+.middle_panel {
+    width: 700px;
+    height: 250px;
     float: left;
     background-color: rgba(0, 255, 13, 0.774);
 }
 
+#barchart_container {
+    width: 700px; min-width: 700px; max-width: 700px;
+    height: 250px; min-height: 250px; max-height: 250px;
+}
+
+/*--------------------------------------------------------------------------------
+----- Right table panel container and elements configuration
+--------------------------------------------------------------------------------*/
+
 .right_panel {
-    width: 400px;
-    height: 600px;
+    width: 500px;
+    height: 250px;
     float: left;
     background-color: rgba(12, 74, 245, 0.9);
 }
 
-#barchart_container, #linechart_container {
-    width: 600px; min-width: 600px; max-width: 600px;
+/*--------------------------------------------------------------------------------
+----- Bottom graph panel container and elements configuration
+--------------------------------------------------------------------------------*/
+
+.bottom_panel {
+    width: 1200px;
+    height: 300px;
+    float: left;
+    background-color: rgb(255, 60, 15, 0.6);
+}
+
+#linechart_container {
+    width: 1200px; min-width: 1200px; max-width: 1200px;
     height: 300px; min-height: 300px; max-height: 300px;
 }
+
+/*--------------------------------------------------------------------------------
+----- Application footer container configuration
+--------------------------------------------------------------------------------*/
 
 /* Configure the application footer layout with a dedicated colored/sized/bordered zone */
 .application_footer {
