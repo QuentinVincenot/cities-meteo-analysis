@@ -2,6 +2,14 @@
 ----- RETRIEVED DATA INFORMATION ABOUT CITIES METEO
 --------------------------------------------------------------------------------*/
 
+
+let icon_temperature = "<i class='fa-solid fa-temperature-half' style='font-size:50px;'></i>";
+let icon_humidity = "<i class='fa-solid fa-droplet' style='font-size:50px;'></i>";
+let icon_precipitation = "<i class='fa-solid fa-cloud-showers-heavy' style='font-size:50px;'></i>";
+let icon_pressure = "<i class='fa-solid fa-gauge-high' style='font-size:50px;'></i>";
+let icon_wind = "<i class='fa-solid fa-wind' style='font-size:50px;'></i>";
+
+
 document.getElementById('barchart_canvas').style.width = '700px';
 document.getElementById('barchart_canvas').style.height = '250px';
 const ctx = document.getElementById('barchart_canvas').getContext('2d');
