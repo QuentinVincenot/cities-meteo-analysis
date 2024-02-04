@@ -7,6 +7,9 @@
 
     <!-- Main title of the application page displayed on the browser tab -->
     <title>Cities meteo analysis</title>
+
+    <!-- Import the Chart.js library to draw graphs and visualizations -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -16,9 +19,20 @@
     <!-- Global container to integrate the application visual interactions -->
     <div class="global_container">
 
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
 
+        <div>
+            <canvas id="lineChart"></canvas>
+        </div>
 
     </div>
+
+    
+    
+    <!-- Import the specific script to retrieve meteo data through MeteoFrance API (open-meteo.com) -->
+    <script type="text/javascript" src="scripts_data/data_retrieval.js"></script>
 </body>
 
 </html>
