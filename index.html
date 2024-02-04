@@ -23,6 +23,8 @@
     <div class="global_container">
 
         <div class="left_panel">
+            <div id="filtering_pane_title">Filters</div>
+
             <fieldset id="city_field">
                 <legend>City of interest:</legend>
                 <label>Ville:</label>
@@ -43,11 +45,26 @@
                     <input type="radio" id="Humidity (%)" name="measurement_type" value="Humidity (%)"/>
                     <label for="humidity">Humidity (%)</label>
                 </div>
+                <div>
+                    <input type="radio" id="Precipitation (mm)" name="measurement_type" value="Precipitation (mm)"/>
+                    <label for="precipitation">Precipitation (mm)</label>
+                </div>
+                <div>
+                    <input type="radio" id="Pressure (hPa)" name="measurement_type" value="Pressure (hPa)"/>
+                    <label for="pressure">Pressure (hPa)</label>
+                </div>
+                <div>
+                    <input type="radio" id="Wind speed (km/h)" name="measurement_type" value="Wind speed (km/h)"/>
+                    <label for="wind">Wind speed (km/h)</label>
+                </div>
             </fieldset>
         </div>
 
         <div class="top_zone">
-            a
+            <div class="kpi_card">a</div>
+            <div class="kpi_card">b</div>
+            <div class="kpi_card">c</div>
+            <div class="kpi_card">d</div>
         </div>
 
         <div class="middle_panel">
@@ -57,7 +74,44 @@
         </div>
 
         <div class="right_panel">
-            bb
+            <div id="measurements_data_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Person</th>
+                            <th scope="col">Most interest in</th>
+                            <th scope="col">Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Chris</th>
+                            <td>HTML tables</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dennis</th>
+                            <td>Web accessibility</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sarah</th>
+                            <td>JavaScript frameworks</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Karen</th>
+                            <td>Web performance</td>
+                            <td>36</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Karen</th>
+                            <td>Web performance</td>
+                            <td>36</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="bottom_panel">
