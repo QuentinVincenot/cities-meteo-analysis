@@ -49,10 +49,27 @@ initialize_bar_chart();
 
 // Function to retrieve and store meteo data from the open-meteo online API
 async function retrieve_meteo_data() {
+    // Compute the date 90 days before today and format it to open-meteo API requested format
+    let date = new Date();
+    date.setDate(date.getDate() - 90);
+    let day = date.getDate(), month = date.getMonth() + 1, year = date.getFullYear();
+    let day_string = day.toString(), month_string = month.toString(), year_string = year.toString();
+    if(day < 10) day_string = '0' + day_string;
+    if(month < 10) month_string = '0' + month_string;
+    let start_date = `${year_string}-${month_string}-${day_string}`;
+
+    // Compute today's date and format it to open-meteo API requested format
+    const date2 = new Date();
+    day = date2.getDate(), month = date2.getMonth() + 1, year = date2.getFullYear();
+    day_string = day.toString(), month_string = month.toString(), year_string = year.toString();
+    if(day < 10) day_string = '0' + day_string;
+    if(month < 10) month_string = '0' + month_string;
+    let end_date = `${year_string}-${month_string}-${day_string}`;
+
     // Create and trigger the request to get data from the open-meteo online API
     let request_url = "https://api.open-meteo.com/v1/meteofrance?latitude=52.52&longitude=13.41&" +
                         "daily=temperature_2m_max,temperature_2m_min&timezone=Europe%2FBerlin&" +
-                        "start_date=2023-11-01&end_date=2024-01-31";
+                        "start_date=" + start_date + "&end_date=" + end_date;
     let response = await fetch(request_url);
     let data = await response.json();
 
