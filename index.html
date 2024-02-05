@@ -11,7 +11,7 @@
     <!-- Import the Chart.js library to draw graphs and visualizations -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- -->
+    <!-- Import the Fontawesome library to draw nice looking icons in KPI cards -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Application global and general layout styling -->
@@ -128,7 +128,9 @@
             </div>
         </div>
 
+        <!-- Bottom panel displays a line chart showing the 90 latest daily measurement values -->
         <div class="bottom_panel">
+            <!-- Display the line chart with the corresponding dates and measurement values -->
             <div id="linechart_container">
                 <canvas id="linechart_canvas"></canvas>
             </div>
