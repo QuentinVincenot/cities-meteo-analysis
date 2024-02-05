@@ -38,6 +38,7 @@ body {
 ----- Filtering panel container and elements configuration
 --------------------------------------------------------------------------------*/
 
+/* Configure the left panel with the filtering pane */
 .left_panel {
     width: 180px;
     height: 680px;
@@ -48,6 +49,7 @@ body {
     background-color: rgba(221, 15, 15, 0.6);
 }
 
+/* Configure the filtering pane with font and margins */
 #filtering_pane_title {
     margin-bottom: 15px;
     font-size: 18px;
@@ -94,6 +96,33 @@ body {
     margin-left: 20px;
     border: solid black 1px;
     border-radius: 7px;
+}
+
+.kpi_card_title {
+    height: 35px;
+    line-height: 35px;
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#measurement_min_value, #measurement_max_value, #measurement_avg_value, #measurement_evol_value {
+    width: 132px;
+    height: 85px;
+    line-height: 85px;
+    padding-right: 5px;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+}
+
+.measurement_icon {
+    width: 131px;
+    height: 85px;
+    padding-top: 15px;
+    padding-left: 5px;
+    float: left;
+    text-align: left;
 }
 
 #kpi_min {
