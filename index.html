@@ -26,7 +26,6 @@
     <div class="global_container">
 
         <div class="left_panel">
-
             <!-- Little container zone to display date of the day, retrieved automatically -->
             <div id="today_date_zone">
                 <div class="left_panel_title">Today's date</div>
@@ -76,22 +75,27 @@
             <button id="getdata_button">Get data !</button>
         </div>
 
+        <!-- Top panel is the place for KPI cards, giving min/max/average/evolution of current measurement -->
         <div class="top_zone">
+            <!-- KPI card to display the minimum value of the chosen measurement -->
             <div class="kpi_card" id="kpi_min">
                 <div class="kpi_card_title">Min temperature</div>
                 <div id="measurement_min_value">-4°C</div>
                 <div class="measurement_icon"><i class="fa-solid fa-temperature-half" style="font-size:50px;"></i></div>
             </div>
+            <!-- KPI card to display the maximum value of the chosen measurement -->
             <div class="kpi_card" id="kpi_max">
                 <div class="kpi_card_title">Max temperature</div>
                 <div id="measurement_max_value">24°C</div>
                 <div class="measurement_icon"><i class="fa-solid fa-temperature-half" style="font-size:50px;"></i></div>
             </div>
+            <!-- KPI card to display the average value of the chosen measurement -->
             <div class="kpi_card" id="kpi_avg">
                 <div class="kpi_card_title">Average temperature</div>
                 <div id="measurement_avg_value">11°C</div>
                 <div class="measurement_icon"><i class="fa-solid fa-temperature-half" style="font-size:50px;"></i></div>
             </div>
+            <!-- KPI card to display the evolution of the chosen measurement value -->
             <div class="kpi_card" id="kpi_evol">
                 <div class="kpi_card_title">Evolution (yesterday)</div>
                 <div id="measurement_evol_value">+2°C</div>
@@ -105,13 +109,13 @@
             </div>
         </div>
 
+        <!-- Right panel displays a measurement table with the last 5 records and corresponding measurement values -->
         <div class="right_panel">
+            <!-- Display the table of measurement with their dates and values -->
             <div id="measurements_data_table">
                 <table>
                     <thead>
-                        <tr>
-                            <th scope="col">Date</th><th scope="col">Measurement</th><th scope="col">Value</th>
-                        </tr>
+                        <tr><th scope="col">Date</th><th scope="col">Measurement</th><th scope="col">Value</th></tr>
                     </thead>
                     <tbody>
                         <tr><td scope="row">01/02/2024</td><td>Temperature (°C) in Toulouse</td><td>22</td></tr>
