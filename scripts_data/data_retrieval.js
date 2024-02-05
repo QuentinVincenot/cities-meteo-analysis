@@ -2,6 +2,22 @@
 ----- RETRIEVED DATA INFORMATION ABOUT CITIES METEO
 --------------------------------------------------------------------------------*/
 
+// Function to retrieve today's date and display it in the application
+function get_and_display_today_date() {
+    // Retrieve today's date with Javascript built-in function
+    const date = new Date();
+    // Extract date components from today's date for later custom display
+    let day = date.getDate(), month = date.getMonth() + 1, year = date.getFullYear();
+    // Format today's date with the previously extracted components
+    let day_string = day.toString(), month_string = month.toString(), year_string = year.toString();
+    if(day < 10) day_string = '0' + day_string;
+    if(month < 10) month_string = '0' + month_string;
+    let currentDate = `${day_string}/${month_string}/${year_string}`;
+    // Display today's formatted date in the relevant panel of the application
+    document.getElementById('today_date').innerHTML = currentDate;
+}
+get_and_display_today_date();
+
 
 let icon_temperature = "<i class='fa-solid fa-temperature-half' style='font-size:50px;'></i>";
 let icon_humidity = "<i class='fa-solid fa-droplet' style='font-size:50px;'></i>";
