@@ -49,11 +49,23 @@ body {
     background-color: rgba(221, 15, 15, 0.6);
 }
 
-/* Configure the filtering pane with font and margins */
-#filtering_pane_title {
+/* Configure the left panel titles with fonts and margins */
+.left_panel_title {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#today_date_zone {
+    height: 140px;
+}
+
+#today_date {
+    position: relative;
+    top: 30px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
